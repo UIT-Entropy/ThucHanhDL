@@ -1,0 +1,6 @@
+numpy
+torch
+matplotlib
+torchvision
+timm
+huggingface_hub
