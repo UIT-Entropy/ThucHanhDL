@@ -26,9 +26,9 @@ cd "Thực Hành 2"
 pip install -r requirements.txt
 ```
 
-Mở `assignments.ipynb` và chạy lần lượt các ô. Notebook tự chọn GPU nếu có, hoặc CPU khi chạy local. Code mô hình nằm trong `modeling`, loader nằm trong `Load_data`; phần huấn luyện, đánh giá và vẽ đồ thị dùng các module riêng.
+Mở `assignments.ipynb` và chạy lần lượt các ô. Notebook tự chọn GPU nếu có, hoặc CPU khi chạy local. Code mô hình nằm trong `modeling`, loader nằm trong `Load_data`; `support/trainer.py` phụ trách huấn luyện, `support/visualization.py` phụ trách vẽ đồ thị và `metrics.py` phụ trách đánh giá.
 
-Kết quả huấn luyện GPU của thực hành 2 đang được chạy trên Kaggle và sẽ cập nhật sau.
+Notebook thực hành 2 đã có output chạy trên Kaggle GPU Tesla T4, đủ 10 epoch cho mỗi mô hình, bảng độ đo và 15 hình. Accuracy test: LeNet 98,27%; GoogLeNet 98,93%; ResNet-18 49,55%; ResNet50 86,23%. ResNet-18 còn chưa hội tụ sau 10 epoch; xem nhận xét cuối notebook.
 
 ## Dữ liệu
 

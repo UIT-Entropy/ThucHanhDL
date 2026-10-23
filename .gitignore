@@ -10,6 +10,9 @@ access_token
 **/data/
 **/checkpoints/
 **/kaggle_run/
+.kaggle*.py
+kernel-metadata.json
+dataset-metadata.json
 *.pth
 *.pt
 *.npz
