@@ -30,6 +30,27 @@ Mở `assignments.ipynb` và chạy lần lượt các ô. Notebook tự chọn 
 
 Notebook thực hành 2 đã có output chạy trên Kaggle GPU Tesla T4, đủ 10 epoch cho mỗi mô hình, bảng độ đo và 15 hình. Accuracy test: LeNet 98,27%; GoogLeNet 98,93%; ResNet-18 49,55%; ResNet50 86,23%. ResNet-18 còn chưa hội tụ sau 10 epoch; xem nhận xét cuối notebook.
 
+## Thực hành 3
+
+[Notebook bài làm](<Thực hành 3/assignments.ipynb>) có output huấn luyện và đánh giá trên toàn bộ dữ liệu.
+
+| Bài | Mô hình | Dữ liệu | F1 test |
+|---|---|---|---:|
+| 1 | LSTM 5 lớp, hidden size 256 | UIT-VSFC (topic) | 0.7551 |
+| 2 | GRU 5 lớp, hidden size 256 | UIT-VSFC (topic) | 0.7468 |
+| 3 | BiLSTM 5 lớp, hidden size 256 | PhoNER | 0.8739 |
+
+```bash
+cd "Thực hành 3"
+pip install -r requirements.txt
+python -m data_utils.prepare_data
+python main.py --assignment 1
+python main.py --assignment 2
+python main.py --assignment 3
+```
+
+Code được chia thành `data_utils` (dữ liệu), `models` (kiến trúc mạng), `training` (huấn luyện và đánh giá), `utils` (đồ thị). Các bài dùng Adam và early stopping theo F1 dev. Bài 1, 2 dùng macro-F1; bài 3 dùng F1 theo thực thể. Xem [hướng dẫn thực hành 3](<Thực hành 3/README.md>) để biết cấu hình và cách chạy.
+
 ## Dữ liệu
 
 Dữ liệu và trọng số không được đưa lên GitHub. Đặt 4 file MNIST vào thư mục `data` của mỗi bài thực hành:
