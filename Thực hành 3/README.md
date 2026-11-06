@@ -42,4 +42,3 @@ Nguồn dữ liệu:
 - UIT-VSFC: https://drive.google.com/drive/folders/1rdcXNGt_3-QUvV8EtSvVsLMVeHmk6Yqk
 - PhoNER: https://github.com/VinAIResearch/PhoNER_COVID19
 
-Script tải dữ liệu vào datasets/. datasets/ và outputs/ chỉ lưu ở máy, không đưa lên GitHub. PhoNER dùng cho học tập và không được phân phối lại.
